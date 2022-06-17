@@ -1,4 +1,4 @@
-# YandereSimulator Launcher
+# YandereSimulatorLauncher 2
 
 ## ℹ️ Basic information ℹ️
 
