@@ -9,5 +9,4 @@ script:
   - choco install msbuild.extensionpack
   - dotnet dev-certs https --trust
   - dotnet --version
-  - dotnet restore YandereSimulatorLauncher2.sln
   - msbuild /p:Configuration=Release YandereSimulatorLauncher2.sln
