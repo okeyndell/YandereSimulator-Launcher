@@ -1,7 +1,7 @@
 language: csharp
 solution: YandereSimulatorLauncher2.sln
 mono:
-  - 3.8.0
+  - 3.2.8
 os:
  - windows
 script:
