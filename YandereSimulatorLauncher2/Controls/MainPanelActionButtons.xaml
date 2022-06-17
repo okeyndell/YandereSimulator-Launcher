@@ -20,5 +20,19 @@
         <Border x:Name="PlayButton" Grid.Row="2" Background="#ff80d3" Focusable="False" CornerRadius="22" BorderThickness="1" MouseEnter="Play_OnMouseEnter" MouseLeave="Play_OnMouseLeave" MouseDown="Play_OnMouseDown" MouseUp="Play_OnMouseUp">
             <TextBlock x:Name="PlayButtonText" FontFamily="{StaticResource LeagueGothic}" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="23.75" Foreground="White" Text="Test Play" />
         </Border>
+        <Border x:Name="OpenFolder" Focusable="False" CornerRadius="22" BorderThickness="1" MouseEnter="OpenFolderEnter" MouseLeave="OpenFolderLeave" MouseDown="OpenFolderDown" MouseUp="OpenFolderUp" Margin="205,1,-51,-1" RenderTransformOrigin="0.5,0.5" Grid.Row="2">
+            <Border.Background>
+                <ImageBrush ImageSource="/Resources/folder.png"/>
+            </Border.Background>
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.323"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.194"/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
     </Grid>
+
 </UserControl>

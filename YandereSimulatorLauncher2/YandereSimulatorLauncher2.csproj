@@ -15,6 +15,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Controls\folder.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MegaApiClient" Version="1.8.0" />
     <PackageReference Include="Fody" Version="6.0.8" />
     <PackageReference Include="Costura.Fody" Version="4.1.0" />
@@ -22,6 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\folder.png" />
     <Resource Include="EmbeddedAssets\Fonts\leaguegothic-regular-webfont.ttf" />
     <Resource Include="EmbeddedAssets\Images\close-black.png" />
     <Resource Include="EmbeddedAssets\Images\close-white.png" />

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +39,7 @@ namespace YandereSimulatorLauncher2.Controls
     {
         public event EventHandler InstallButtonClicked;
         public event EventHandler PlayButtonClicked;
+        public event EventHandler OpenFolderButtonClicked;
 
         private YsInstallMode mCurrentMode;
         public YsInstallMode CurrentMode
@@ -255,5 +257,31 @@ namespace YandereSimulatorLauncher2.Controls
             mIsPlayPrimed = false;
             DoRender();
         }
+
+        //FOLDER
+
+        private void OpenFolderDown(object sender, MouseButtonEventArgs e)
+        {
+            DoRender();
+        }
+
+        private void OpenFolderUp(object sender, MouseButtonEventArgs e)
+        {
+            OpenFolderButtonClicked?.Invoke(this, new EventArgs());
+            Process.Start(@System.IO.Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName));
+            DoRender();
+        }
+
+        private void OpenFolderEnter(object sender, MouseEventArgs e)
+        {
+            DoRender();
+        }
+
+        private void OpenFolderLeave(object sender, MouseEventArgs e)
+        {
+
+            DoRender();
+        }
+
     }
 }
