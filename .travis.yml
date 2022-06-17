@@ -1,0 +1,7 @@
+language: csharp
+solution: YandereSimulatorLauncher2.sln
+mono: none
+os:
+ - windows
+script:
+ - msbuild /p:Configuration=Release YandereSimulatorLauncher2.sln
