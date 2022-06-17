@@ -1,10 +1,13 @@
 language: csharp
 solution: YandereSimulatorLauncher2.sln
+mono:
+  - latest
+  - 3.12.0
+  - 3.10.0
 os:
  - windows
 script:
   - choco install netfx-4.8-devpack
-  - choco install mono
   - choco install dotnet.script
   - choco install msbuild.extensionpack
   - msbuild /p:Configuration=Release YandereSimulatorLauncher2.sln
