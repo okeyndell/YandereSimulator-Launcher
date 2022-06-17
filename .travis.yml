@@ -5,6 +5,7 @@ os:
  - windows
 script:
   - choco install netfx-4.8-devpack
+  - choco install dotnet.script
   - dotnet --version
   - dotnet restore
   - msbuild /p:Configuration=Release YandereSimulatorLauncher2.sln
